@@ -1,7 +1,7 @@
 <h1 align="center">💊 Healthcare Drug Use Analytics Platform</h1>
 
 <p align="center">
-  <em>Data-driven insights into U.S. healthcare drug use patterns, built for strategic public health decision-making.</em>
+  <em>End-to-End Business Analysis Case Study.</em>
 </p>
 <p align="center">
   <img src="dashboard/FinalVideoWalkThrough-ezgif.com-speed.gif" alt="Healthcare Dashboard Demo" width="80%" />
@@ -10,9 +10,47 @@
 
 ---
 
-## 📌 Summary
+## 📌 Business Problem
 
-A comprehensive analytics project exploring drug use across healthcare settings in the United States — Emergency (ED), Inpatient (IP), and Outpatient (OP). This project merges **hospital-level drug usage data** with **socioeconomic census data** to identify key trends, vulnerable demographics, and geographical hotspots.
+Healthcare stakeholders lack a unified view of drug usage patterns across states, facilities, and demographics. Fragmented data makes it difficult to identify high-usage regions, assess disparities, and support policy or operational decisions.
+
+---
+
+## 👥 Stakeholders
+
+- Healthcare administrators
+- Policy & compliance teams
+- Clinical operations leadership
+
+---
+
+## 💼 Business Questions
+
+- Which drug categories show the highest utilization across care settings?
+- Are there regional or state-level disparities in drug usage?
+- Which demographics exhibit abnormal or high-risk usage patterns?
+- Where should intervention, policy review, or resource allocation be prioritized?
+
+---
+## 📋 Key Requirements
+
+- Ability to drill down from national → state → facility level
+- Consistent KPI definitions across all dashboards
+- Filters by drug type, demographic group, and care setting
+- Clean, validated data model to avoid reporting discrepancies
+- Self-service exploration for non-technical stakeholders
+---
+
+## 💻 From Business Need to Technical Logic
+
+- Business need: Identify regions with unusually high drug usage  
+  Technical approach: SQL aggregation by state and drug category with normalized metrics
+
+- Business need: Understand demographic risk patterns  
+  Technical approach: Grouping and filtering by age, setting, and drug type
+
+- Business need: Enable stakeholder exploration  
+  Technical approach: Interactive dashboards with drill-downs and parameter controls
 
 ---
 
@@ -20,9 +58,9 @@ A comprehensive analytics project exploring drug use across healthcare settings 
 
 Simulating a real-world public health research scenario, this project answers:
 
-- 👥 **Who** is most impacted by drug use?
-- 📍 **Where** are the highest-risk regions?
-- 🧬 **What socioeconomic factors** contribute to these trends?
+-  **Who** is most impacted by drug use?
+-  **Where** are the highest-risk regions?
+-  **What socioeconomic factors** contribute to these trends?
 
 ---
 
@@ -160,6 +198,14 @@ To move beyond descriptive Tableau dashboards, I extended the project in **KNIME
 </p>
 ---
 
+## ⚡Decisions Enabled
+
+- Identification of high-usage regions requiring policy review
+- Visibility into demographic and facility-level usage trends
+- Data-backed support for resource allocation and compliance discussions
+
+---
+
 ## 📥 Data Sources
 
 - **Healthcare Facility Data**: [HealthData.gov – HHS](https://healthdata.gov)
@@ -194,11 +240,16 @@ To move beyond descriptive Tableau dashboards, I extended the project in **KNIME
 
 ---
 
+## ⚠️ Limitations
+
+This project focuses on exploratory and decision-support analysis. In a production environment, additional steps such as stakeholder-led KPI validation, automated data pipelines, and governance controls would be required.
+
+---
+
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Complete-brightgreen" />
   <img src="https://img.shields.io/badge/Python-3.10-blue" />
   <img src="https://img.shields.io/badge/Tableau-Interactive-blueviolet" />
   <img src="https://img.shields.io/badge/Colab-Notebooks-orange" />
 </p>
-
 
